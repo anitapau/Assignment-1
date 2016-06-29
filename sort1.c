@@ -1,14 +1,17 @@
-#include<stdio.h>
-#include<stdlib.h>
-void insertionSor(int[] theArray) {
- int i, j, temp;
- for(i = 1; i< sizeOf(theArray);i++) {
+#include "sort1.h"
+void bubbleSort(int[] theArray, int theNum) {
+int i, j, temp;
+ for(i = 1; i< n;i++) {
    j= i;
    temp = theArray[i];
-   while(j > 0; && temp < theArray[j-1]) {
-     theArray[j] = theArray[j-1];
-      j--;
+   for(j = 0; j < n-1; j++) {
+    if(theArraj[j] > theArray[j+1]) {
+     temp = theArray[j];
+     theArray[j] = theArray[j+1];
+     theArray[j+1] = temp;
+     }
    }
-   theArray[j] = temp;
+
+   n--;
  }
 }
