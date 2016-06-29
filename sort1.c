@@ -1,5 +1,6 @@
 #include "sort1.h"
-void bubbleSort(int[] theArray, int theNum) {
+//bubble sort
+void sort1(int[] theArray, int theNum) {
 int i, j, temp;
  for(i = 1; i< theNum;i++) {
    j= i;
