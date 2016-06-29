@@ -15,9 +15,10 @@ main.o: main.c
 #gcc -c -I. main.c
 	$(CC) -c $(CFLAGS) main.c	
 	 
-insertionSort.o:
-sort1.o: 
-sort2.o: 
+insertionSort.o: insertionSort.c
+sort1.o: sort1.c
+
+sort2.o: sort2.c 
 
 #clean up procedure		
 clean:
