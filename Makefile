@@ -1,14 +1,14 @@
 #compiler
 CC=gcc
 #linker
-LD=gcc
+LD=gcc 
 #include file directory
-CFLAGS=-I.
+CFLAGS= -std=c99 -I.
 
 #linker rule
 testSort: main.o insertionSort.o sort1.o sort2.o
 #	gcc -o testSort main.o insertionSort.o sort1.o sort2.o
-	$(LD) -o testSort main.o insertSort.o sort1.o sort2.o
+	$(LD) -o testSort main.o insertionSort.o sort1.o sort2.o
 	
 #compiler rules
 main.o: main.c
@@ -17,7 +17,8 @@ main.o: main.c
 	 
 insertionSort.o: insertionSort.c
 #gcc -c -I. insertionSort.c
-     	$(CC) -c $(CFLAGS)insertionSort.c
+	$(CC) -c $(CFLAGS) insertionSort.c
+
 sort1.o: sort1.c
 #gcc -c -I. sort1.c
 	$(CC) -c $(CFLAGS) sort1.c
