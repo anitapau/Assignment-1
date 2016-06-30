@@ -1,1 +1,1 @@
-void sort2(int[] theArray, int theNum);
+void sort2(int *theArray, int theNum);
